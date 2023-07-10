@@ -531,6 +531,8 @@ $RECYCLE.BIN/
 
 _NCrunch*
 
-cumCube/.vs/
+*/.vs/
 .vs/
 *.dll
+/cumCube/obj/**
+cumCube/obj/**
