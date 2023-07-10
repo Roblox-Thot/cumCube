@@ -44,5 +44,23 @@ namespace cumCube
         {
             exploitAPI.SendLuaScript(@"loadstring(game:HttpGet(""https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"", true))()"); // Runs script
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            exploitAPI.SendLuaScript(@"loadstring(game:HttpGet(""https://raw.githubusercontent.com/Roblox-Thot/Dex/main/out/build.lua""))()"); // Runs script
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            exploitAPI.SendLuaScript(@"local owner = ""Upbolt""
+                local branch = ""revision""
+
+                local function webImport(file)
+                    return loadstring(game:HttpGetAsync((""https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua""):format(owner, branch, file)), file .. '.lua')()
+                end
+
+                webImport(""init"")
+                webImport(""ui/main"")");
+        }
     }
 }
