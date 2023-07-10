@@ -78,17 +78,17 @@ namespace cumCube
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(499, 41);
+            this.button3.Location = new System.Drawing.Point(525, 41);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Run VapeV4ForRoblox";
+            this.button3.Text = "Vape";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(499, 12);
+            this.button4.Location = new System.Drawing.Point(525, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 23);
             this.button4.TabIndex = 4;
@@ -98,7 +98,7 @@ namespace cumCube
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(384, 41);
+            this.button5.Location = new System.Drawing.Point(408, 41);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 23);
             this.button5.TabIndex = 5;
@@ -108,7 +108,7 @@ namespace cumCube
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(384, 12);
+            this.button6.Location = new System.Drawing.Point(408, 12);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(109, 23);
             this.button6.TabIndex = 6;
