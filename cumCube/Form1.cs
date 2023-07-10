@@ -18,12 +18,12 @@ namespace cumCube
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // run button
         {
             exploitAPI.SendLuaScript(richTextBox1.Text); // Runs script
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // inject button
         {
             exploitAPI.LaunchExploit(); // Injects into Roblox
             exploitAPI.SendLuaScript(@"task.wait(); game:GetService(""StarterGui""):SetCore(""SendNotification"",{
@@ -31,8 +31,8 @@ namespace cumCube
 	            Text = ""Injected!"",
 	            Icon = ""rbxassetid://13353741942""
             })"); // Runs script
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\VS\cumCube\cumCube\Poland.wav");
-            player.Play();
+            //System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\VS\cumCube\cumCube\Poland.wav");
+            //player.Play();
         }
 
         private void button3_Click(object sender, EventArgs e)
