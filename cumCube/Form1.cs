@@ -26,10 +26,10 @@ namespace cumCube
         private void button2_Click(object sender, EventArgs e)
         {
             exploitAPI.LaunchExploit(); // Injects into Roblox
-            exploitAPI.SendLuaScript(@"game:GetService(""StarterGui""):SetCore(""SendNotification"",{
-	            Title = ""TubSploit"", -- Required
-	            Text = ""Injected!"", -- Required
-	            Icon = ""rbxassetid://13353741942"" -- Optional
+            exploitAPI.SendLuaScript(@"task.wait(); game:GetService(""StarterGui""):SetCore(""SendNotification"",{
+	            Title = ""TubSploit"",
+	            Text = ""Injected!"",
+	            Icon = ""rbxassetid://13353741942""
             })"); // Runs script
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\VS\cumCube\cumCube\Poland.wav");
             player.Play();
@@ -38,6 +38,11 @@ namespace cumCube
         private void button3_Click(object sender, EventArgs e)
         {
             exploitAPI.SendLuaScript(@"loadstring(game:HttpGet(""https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua"", true))()"); // Runs script
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            exploitAPI.SendLuaScript(@"loadstring(game:HttpGet(""https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"", true))()"); // Runs script
         }
     }
 }

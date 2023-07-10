@@ -534,5 +534,6 @@ _NCrunch*
 */.vs/
 .vs/
 *.dll
+*.exe
 /cumCube/obj/**
 cumCube/obj/**
